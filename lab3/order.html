@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Собрать заказ — Sweetie Cakes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="order.css">
+  <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body>
+
+  <header>
+    <h1>Sweetie Cakes</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="order.html" class="active">Собрать заказ</a>
+      <a href="orders.html">Заказы</a>
+      <a href="login.html">Войти</a>
+      <a href="feedback.html">Обратная связь</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Торты</h2>
+      <div class="dishes">
+
+        <div class="dish-card">
+          <img src="images/red_velvet.png" alt="Торт Красный бархат">
+          <p class="price">2500₽</p>
+          <p class="name">Торт «Красный бархат»</p>
+          <p class="weight">1 кг</p>
+          <button>Добавить</button>
+        </div>
+
+        <div class="dish-card">
+          <img src="images/napoleon2.png" alt="Торт Наполеон">
+          <p class="price">2200₽</p>
+          <p class="name">Торт «Наполеон»</p>
+          <p class="weight">1 кг</p>
+          <button>Добавить</button>
+        </div>
+
+        <div class="dish-card">
+          <img src="images/medovic1.png" alt="Торт Медовик">
+          <p class="price">1500₽</p>
+          <p class="name">Торт «Медовик»</p>
+          <p class="weight">1 кг</p>
+          <button>Добавить</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Пирожные</h2>
+      <div class="dishes">
+
+        <div class="dish-card">
+          <img src="images/cheesecake1.png" alt="Чизкейк Нью-Йорк">
+          <p class="price">350₽</p>
+          <p class="name">Чизкейк «Нью-Йорк»</p>
+          <p class="weight">150 г</p>
+          <button>Добавить</button>
+        </div>
+
+        <div class="dish-card">
+          <img src="images/eclairs1.png" alt="Эклер">
+          <p class="price">250₽</p>
+          <p class="name">Эклер с заварным кремом</p>
+          <p class="weight">100 г</p>
+          <button>Добавить</button>
+        </div>
+
+        <div class="dish-card">
+          <img src="images/macarony.png" alt="Макарун">
+          <p class="price">150₽</p>
+          <p class="name">Макарун</p>
+          <p class="weight">30 г</p>
+          <button>Добавить</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2>Напитки</h2>
+      <div class="dishes">
+
+        <div class="dish-card">
+          <img src="images/latte.png" alt="Латте">
+          <p class="price">250₽</p>
+          <p class="name">Кофе латте</p>
+          <p class="weight">300 мл</p>
+          <button>Добавить</button>
+        </div>
+
+        <div class="dish-card">
+          <img src="images/cacao.png" alt="Какао">
+          <p class="price">220₽</p>
+          <p class="name">Какао с молоком</p>
+          <p class="weight">300 мл</p>
+          <button>Добавить</button>
+        </div>
+
+        <div class="dish-card">
+          <img src="images/tea.png" alt="Чай">
+          <p class="price">180₽</p>
+          <p class="name">Чай с бергамотом</p>
+          <p class="weight">400 мл</p>
+          <button>Добавить</button>
+        </div>
+
+      </div>
+    </section>
+
+    <section>
+      <h2 class="order-title">Сделать заказ</h2>
+
+      <form class="order-form" action="https://httpbin.org/post" method="POST">
+
+        <div class="form-columns">
+
+            <div class="form-left">
+            <h3>Ваш заказ</h3>
+
+            <label for="cake">Торт</label>
+            <select id="cake" name="cake">
+              <option value="">-- Выберите торт --</option>
+              <option value="red-velvet">Красный бархат</option>
+              <option value="napoleon">Наполеон</option>
+              <option value="honey">Медовик</option>
+            </select>
+
+            <label for="pastry">Пирожное</label>
+            <select id="pastry" name="pastry">
+              <option value="">-- Выберите пирожное --</option>
+              <option value="cheesecake">Чизкейк</option>
+              <option value="eclair">Эклер</option>
+              <option value="macaron">Макарун</option>
+            </select>
+
+            <label for="drink">Напиток</label>
+            <select id="drink" name="drink">
+              <option value="">-- Выберите напиток --</option>
+              <option value="latte">Латте</option>
+              <option value="cocoa">Какао</option>
+              <option value="tea">Чай</option>
+            </select>
+
+            <label for="comment">Комментарии к заказу</label>
+            <textarea id="comment" name="comment" rows="5"></textarea>
+          </div>
+
+          <div class="form-right">
+            <h3>Ваши данные</h3>
+
+            <label for="name">Имя</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+
+            <label class="checkbox-label">
+              <input type="checkbox" name="subscribe" checked>
+              Получать информацию о скидках и акциях
+            </label>
+
+            <label for="phone">Номер телефона</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Адрес доставки</label>
+            <input type="text" id="address" name="address" required>
+            <p class="hint">Доставка осуществляется только по Москве</p>
+
+            <fieldset>
+              <legend>Время доставки:</legend>
+              <label>
+                <input type="radio" name="time" value="asap" checked>
+                Как можно скорее
+              </label>
+              <label>
+                <input type="radio" name="time" value="exact">
+                К указанному времени
+              </label>
+            </fieldset>
+
+            <label for="delivery-time">Укажите время доставки</label>
+            <input type="time" id="delivery-time" name="delivery-time">
+            <p class="hint">Доступное время доставки с 7:00 до 23:00</p>
+
+            <div class="form-buttons">
+              <button type="reset">Сбросить</button>
+              <button type="submit">Отправить</button>
+            </div>
+          </div>
+
+        </div>
+      </form>
+    </section>
+
+  </main>
+
+  <footer id="contacts">
+    <p>Позвонить нам: <a href="tel:+70000000000">+7-000-000-00-00</a></p>
+  </footer>
+
+</body>
+</html>

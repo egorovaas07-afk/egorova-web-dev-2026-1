@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Войти — Sweetie Cakes</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="form.css">
+  <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body class="login-page">
+
+  <header>
+    <h1>Sweetie Cakes</h1>
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="order.html">Собрать заказ</a>
+      <a href="orders.html">Заказы</a>
+      <a href="login.html" class="active">Войти</a>
+      <a href="feedback.html">Обратная связь</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2 class="form-title">Вход</h2>
+
+      <form class="auth-form" action="https://httpbin.org/post" method="POST">
+
+        <label for="login">Логин:</label>
+        <input type="text" id="login" name="login" required>
+
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password" required>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="remember">
+          Запомнить меня
+        </label>
+
+        <div class="form-buttons">
+          <button type="submit">Войти</button>
+        </div>
+
+      </form>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <p>Позвонить нам: <a href="tel:+70000000000">+7-000-000-00-00</a></p>
+  </footer>
+
+</body>
+</html>
