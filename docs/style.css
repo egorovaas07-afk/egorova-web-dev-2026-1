@@ -5,49 +5,67 @@
 }
 
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #222222;
-  background-color: #f9f9f9;
+  color: #5a3a2e;
+  background-color: #fdf6f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
   background-color: #ffffff;
   padding: 20px 40px;
   margin-bottom: 30px;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 2px solid #f8d7da;
+}
+
+.about-img {
+  display: block;
+  width: 600px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 20px;
+  border-radius: 35px;
 }
 
 h1 {
   font-size: 32px;
   font-weight: 700;
-  color: #d35400;
+  color: #e8a0a8;
   margin-bottom: 15px;
 }
 
 nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
   padding: 10px 0;
-  margin: 0;
 }
 
 nav a {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 16px;
   font-weight: 700;
-  color: #333333;
-  margin-right: 20px;
+  color: #5a3a2e;
   transition: color 0.3s ease;
 }
 
 nav a:hover {
-  color: #d35400;
+  color: #e8a0a8;
+}
+
+nav a.active {
+  color: tomato;
 }
 
 main {
   padding: 0 40px;
   margin-bottom: 40px;
+  flex: 1;
 }
 
 section {
@@ -57,23 +75,23 @@ section {
 h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #2c3e50;
+  color: #5a3a2e;
   margin-bottom: 15px;
 }
 
 p {
   font-size: 16px;
   font-weight: 400;
-  color: #444444;
+  color: #7a5a4e;
   line-height: 1.6;
 }
 
 img {
-  width: 100%;
-  max-width: 800px;
+  width: 600px;
+  max-width: 100%;
   height: auto;
   margin-bottom: 15px;
-  border-radius: 8px;
+  border-radius: 35px;
 }
 
 ul {
@@ -84,7 +102,7 @@ ul {
 
 ul li {
   font-size: 16px;
-  color: #444444;
+  color: #7a5a4e;
   margin-bottom: 8px;
 }
 
@@ -96,20 +114,19 @@ table {
 }
 
 th, td {
-  border: 1px solid #cccccc;
+  border: 1px solid #f8d7da;
   padding: 12px 15px;
   font-size: 15px;
-  color: #333333;
-  text-align: center;
+  color: #5a3a2e;
 }
 
 th {
-  background-color: #f0f0f0;
+  background-color: #f8d7da;
   font-weight: 700;
 }
 
 footer {
-  background-color: black;
+  background-color: #5a3a2e;
   color: white;
   padding: 25px 40px;
   margin-top: 40px;
@@ -117,15 +134,14 @@ footer {
 
 footer p {
   font-size: 16px;
-  font-weight: 400;
   color: white;
 }
 
 footer a {
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-size: 16px;
-  color: #f1c40f;
+  color: #f8d7da;
   transition: color 0.3s ease;
 }
 
@@ -133,115 +149,63 @@ footer a:hover {
   color: #ffffff;
 }
 
-form {
-  max-width: 700px;
-  padding: 30px;
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+
+@media (max-width: 800px) {
+  header, main, footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  table {
+    font-size: 14px;
+  }
 }
 
-form label {
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 700;
-  color: #333333;
+@media (max-width: 600px) {
+  header {
+    text-align: center;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  h1 {
+    font-size: 22px;
+  }
+
+  table {
+    font-size: 13px;
+  }
+
+  th, td {
+    padding: 8px;
+  }
 }
 
-form input[type="text"],
-form select,
-form textarea {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-}
+@media (max-width: 400px) {
+  table {
+    font-size: 11px;
+  }
 
-form textarea {
-  resize: vertical;
-}
-
-fieldset {
-  margin-bottom: 20px;
-  padding: 15px;
-  border: 1px solid #cccccc;
-  border-radius: 5px;
-}
-
-fieldset label {
-  font-weight: 400;
-  margin-bottom: 10px;
-}
-
-form input[type="file"] {
-  margin-bottom: 20px;
-}
-
-form input[type="checkbox"] {
-  margin-right: 8px;
-}
-
-form button {
-  padding: 12px 25px;
-  border: none;
-  border-radius: 5px;
-  background-color: #d35400;
-  color: #ffffff;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  font-weight: 700;
-  cursor: pointer;
-}
-
-form button:hover {
-  background-color: #a04000;
-}
-
-.login-page {
-  min-height: 100vh;
-  background-image: url("back2.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.login-header {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(255, 255, 255, 0.9);
-  margin-bottom: 0;
-}
-
-.login-main {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 20px 20px;
-}
-
-.login-form {
-  width: 400px;
-  max-width: 100%;
-}
-
-.login-form h1 {
-  text-align: center;
-  margin-bottom: 25px;
-}
-
-.login-form .remember {
-  display: flex;
-  align-items: center;
-  font-weight: 400;
-  margin-bottom: 20px;
-}
-
-.login-form button {
-  width: 100%;
+  th, td {
+    padding: 5px;
+  }
 }
