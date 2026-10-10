@@ -1,0 +1,141 @@
+.form-section {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.form-title {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 35px;
+  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+}
+
+.login-page {
+  background-image: url("images/bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.login-page header {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.login-page .auth-form {
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(5px);
+}
+
+.auth-form label {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5a3a2e;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.auth-form input[type="text"],
+.auth-form input[type="email"],
+.auth-form input[type="password"],
+.auth-form select,
+.auth-form textarea {
+  display: block;
+  width: 100%;
+  padding: 10px 15px;
+  border: 1px solid #d0c8c2;
+  border-radius: 8px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 15px;
+  color: #5a3a2e;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.auth-form textarea {
+  resize: vertical;
+}
+
+.auth-form fieldset {
+  display: block;
+  border: none;
+  margin-top: 15px;
+  padding: 0;
+}
+
+.auth-form legend {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  color: #5a3a2e;
+  margin-bottom: 10px;
+}
+
+.auth-form .radio-label,
+.auth-form .checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 400;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.auth-form .radio-label input,
+.auth-form .checkbox-label input {
+  width: auto;
+  margin: 0;
+}
+
+.auth-form input[type="file"] {
+  display: block;
+  margin-top: 5px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 14px;
+  color: #5a3a2e;
+  width: 100%;
+}
+
+.auth-form .form-buttons {
+  display: flex;
+  gap: 15px;
+  margin-top: 25px;
+}
+
+.auth-form .form-buttons button {
+  flex: 1;
+  padding: 12px 20px;
+  border: none;
+  background-color: #5a3a2e;
+  color: #ffffff;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.auth-form .form-buttons button:hover {
+  background-color: #e8a0a8;
+}
+
+@media (max-width: 600px) {
+  .auth-form {
+    padding: 20px 25px;
+    border-radius: 20px;
+  }
+
+  .form-buttons {
+    flex-direction: column;
+  }
+}
