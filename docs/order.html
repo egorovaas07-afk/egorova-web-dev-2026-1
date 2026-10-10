@@ -31,95 +31,17 @@
 
     <section>
       <h2>Торты</h2>
-      <div class="dishes">
-
-        <div class="dish-card">
-          <img src="images/red_velvet.png" alt="Торт Красный бархат">
-          <p class="price">2500₽</p>
-          <p class="name">Торт «Красный бархат»</p>
-          <p class="weight">1 кг</p>
-          <button>Добавить</button>
-        </div>
-
-        <div class="dish-card">
-          <img src="images/napoleon2.png" alt="Торт Наполеон">
-          <p class="price">2200₽</p>
-          <p class="name">Торт «Наполеон»</p>
-          <p class="weight">1 кг</p>
-          <button>Добавить</button>
-        </div>
-
-        <div class="dish-card">
-          <img src="images/medovic1.png" alt="Торт Медовик">
-          <p class="price">1500₽</p>
-          <p class="name">Торт «Медовик»</p>
-          <p class="weight">1 кг</p>
-          <button>Добавить</button>
-        </div>
-
-      </div>
+      <div class="dishes" data-category="cake"></div>
     </section>
 
     <section>
       <h2>Пирожные</h2>
-      <div class="dishes">
-
-        <div class="dish-card">
-          <img src="images/cheesecake1.png" alt="Чизкейк Нью-Йорк">
-          <p class="price">350₽</p>
-          <p class="name">Чизкейк «Нью-Йорк»</p>
-          <p class="weight">150 г</p>
-          <button>Добавить</button>
-        </div>
-
-        <div class="dish-card">
-          <img src="images/eclairs1.png" alt="Эклер">
-          <p class="price">250₽</p>
-          <p class="name">Эклер с заварным кремом</p>
-          <p class="weight">100 г</p>
-          <button>Добавить</button>
-        </div>
-
-        <div class="dish-card">
-          <img src="images/macarony.png" alt="Макарун">
-          <p class="price">150₽</p>
-          <p class="name">Макарун</p>
-          <p class="weight">30 г</p>
-          <button>Добавить</button>
-        </div>
-
-      </div>
+      <div class="dishes" data-category="pastry"></div>
     </section>
 
     <section>
       <h2>Напитки</h2>
-      <div class="dishes">
-
-        <div class="dish-card">
-          <img src="images/latte.png" alt="Латте">
-          <p class="price">250₽</p>
-          <p class="name">Кофе латте</p>
-          <p class="weight">300 мл</p>
-          <button>Добавить</button>
-        </div>
-
-        <div class="dish-card">
-          <img src="images/cacao.png" alt="Какао">
-          <p class="price">220₽</p>
-          <p class="name">Какао с молоком</p>
-          <p class="weight">300 мл</p>
-          <button>Добавить</button>
-        </div>
-
-        <div class="dish-card">
-          <img src="images/tea.png" alt="Чай">
-          <p class="price">180₽</p>
-          <p class="name">Чай с бергамотом</p>
-          <p class="weight">400 мл</p>
-          <button>Добавить</button>
-        </div>
-
-      </div>
+      <div class="dishes" data-category="drink"></div>
     </section>
 
     <section>
@@ -132,29 +54,31 @@
             <div class="form-left">
             <h3>Ваш заказ</h3>
 
-            <label for="cake">Торт</label>
-            <select id="cake" name="cake">
-              <option value="">-- Выберите торт --</option>
-              <option value="red-velvet">Красный бархат</option>
-              <option value="napoleon">Наполеон</option>
-              <option value="honey">Медовик</option>
-            </select>
+            <p id="nothing-selected">Ничего не выбрано</p>
 
-            <label for="pastry">Пирожное</label>
-            <select id="pastry" name="pastry">
-              <option value="">-- Выберите пирожное --</option>
-              <option value="cheesecake">Чизкейк</option>
-              <option value="eclair">Эклер</option>
-              <option value="macaron">Макарун</option>
-            </select>
+            <div data-summary="cake">
+              <p class="order-category">Торт</p>
+              <p class="order-item"></p>
+            </div>
 
-            <label for="drink">Напиток</label>
-            <select id="drink" name="drink">
-              <option value="">-- Выберите напиток --</option>
-              <option value="latte">Латте</option>
-              <option value="cocoa">Какао</option>
-              <option value="tea">Чай</option>
-            </select>
+            <div data-summary="pastry">
+              <p class="order-category">Пирожное</p>
+              <p class="order-item"></p>
+            </div>
+
+            <div data-summary="drink">
+              <p class="order-category">Напиток</p>
+              <p class="order-item"></p>
+            </div>
+
+            <div id="order-total">
+              <p class="order-category">Стоимость заказа</p>
+              <p class="order-total-price" id="total-price">0₽</p>
+            </div>
+
+            <input type="hidden" id="cake-input" name="cake">
+            <input type="hidden" id="pastry-input" name="pastry">
+            <input type="hidden" id="drink-input" name="drink">
 
             <label for="comment">Комментарии к заказу</label>
             <textarea id="comment" name="comment" rows="5"></textarea>
@@ -212,6 +136,10 @@
   <footer id="contacts">
     <p>Позвонить нам: <a href="tel:+70000000000">+7-000-000-00-00</a></p>
   </footer>
+
+  <script src="dishes.js"></script>
+  <script src="display.js"></script>
+  <script src="order.js"></script>
 
 </body>
 </html>

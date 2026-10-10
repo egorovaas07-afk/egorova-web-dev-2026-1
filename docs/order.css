@@ -239,3 +239,26 @@
     flex-direction: column;
   }
 }
+
+.dish-card.selected {
+  border: 2px solid tomato;
+}
+
+.dish-card.selected button {
+  background-color: #f8d7da;
+}
+
+.order-category {
+  font-weight: 700;
+  color: #5a3a2e;
+  margin-top: 15px;
+}
+
+.order-item {
+  color: #7a5a4e;
+}
+
+.order-total-price {
+  font-size: 20px;
+  color: #5a3a2e;
+}
