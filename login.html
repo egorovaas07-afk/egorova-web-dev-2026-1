@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход — Food Construct</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+  <header class="login-header">
+    <nav>
+      <a href="index.html">Главная</a>
+      <a href="login.html">Войти</a>
+      <a href="#lunch">Собрать ланч</a>
+      <a href="#orders">Заказы</a>
+      <a href="feedback.html">Обратная связь</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </header>
+
+  <main class="login-main">
+    <form
+      class="login-form"
+      action="https://httpbin.org/post"
+      method="POST">
+
+      <h1>Вход</h1>
+
+      <label for="login">Логин:</label>
+      <input
+        type="text"
+        id="login"
+        name="login"
+        required>
+
+      <label for="password">Пароль:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required>
+
+      <label class="remember">
+        <input
+          type="checkbox"
+          name="remember">
+        Запомнить меня
+      </label>
+
+      <button type="submit">Войти</button>
+
+    </form>
+  </main>
+
+</body>
+</html>
