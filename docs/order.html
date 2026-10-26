@@ -78,10 +78,99 @@
       <div class="dishes" data-category="dessert"></div>
     </section>
 
+    <section class="lunches">
+      <h2>Доступные для заказа наборы</h2>
+
+      <div class="lunch-grid">
+        <div class="lunch-option">
+          <div class="lunch-dish">
+            <img src="images/icons/cake.svg" alt="Торт">
+            <p class="caption">Торт</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/pastry.svg" alt="Пирожное">
+            <p class="caption">Пирожное</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/bakery.svg" alt="Выпечка">
+            <p class="caption">Выпечка</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/drink.svg" alt="Напиток">
+            <p class="caption">Напиток</p>
+          </div>
+        </div>
+
+        <div class="lunch-option">
+          <div class="lunch-dish">
+            <img src="images/icons/cake.svg" alt="Торт">
+            <p class="caption">Торт</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/pastry.svg" alt="Пирожное">
+            <p class="caption">Пирожное</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/drink.svg" alt="Напиток">
+            <p class="caption">Напиток</p>
+          </div>
+        </div>
+
+        <div class="lunch-option">
+          <div class="lunch-dish">
+            <img src="images/icons/cake.svg" alt="Торт">
+            <p class="caption">Торт</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/bakery.svg" alt="Выпечка">
+            <p class="caption">Выпечка</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/drink.svg" alt="Напиток">
+            <p class="caption">Напиток</p>
+          </div>
+        </div>
+
+        <div class="lunch-option">
+          <div class="lunch-dish">
+            <img src="images/icons/pastry.svg" alt="Пирожное">
+            <p class="caption">Пирожное</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/bakery.svg" alt="Выпечка">
+            <p class="caption">Выпечка</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/drink.svg" alt="Напиток">
+            <p class="caption">Напиток</p>
+          </div>
+        </div>
+
+        <div class="lunch-option">
+          <div class="lunch-dish">
+            <img src="images/icons/pastry.svg" alt="Пирожное">
+            <p class="caption">Пирожное</p>
+          </div>
+          <div class="lunch-dish">
+            <img src="images/icons/drink.svg" alt="Напиток">
+            <p class="caption">Напиток</p>
+          </div>
+        </div>
+
+        <div class="lunch-dessert">
+          <div class="lunch-dish">
+            <img src="images/icons/dessert.svg" alt="Десерт">
+            <p class="caption">Десерт</p>
+            <p class="caption-note">(Можно добавить к любому набору)</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section>
       <h2 class="order-title">Сделать заказ</h2>
 
-      <form class="order-form" action="https://httpbin.org/post" method="POST">
+      <form class="order-form" action="https://httpbin.org/post" method="POST" novalidate>
 
         <div class="form-columns">
 
@@ -187,6 +276,7 @@
   <script src="display.js"></script>
   <script src="order.js"></script>
   <script src="filter.js"></script>
+  <script src="validate.js"></script>
 
 </body>
 </html>
