@@ -1,19 +1,23 @@
 'use strict';
 
-const categories = ['cake', 'pastry', 'drink'];
+const categories = ['cake', 'pastry', 'bakery', 'drink', 'dessert'];
 
 
 const emptyMessages = {
   cake: 'Блюдо не выбрано',
   pastry: 'Блюдо не выбрано',
-  drink: 'Напиток не выбран'
+  bakery: 'Блюдо не выбрано',
+  drink: 'Напиток не выбран',
+  dessert: 'Блюдо не выбрано'
 };
 
 
 const selected = {
   cake: null,
   pastry: null,
-  drink: null
+  bakery: null,
+  drink: null,
+  dessert: null
 };
 
 const nothingBlock = document.querySelector('#nothing-selected');

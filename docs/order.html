@@ -31,17 +31,51 @@
 
     <section>
       <h2>Торты</h2>
+      <div class="filters" data-category="cake">
+        <button type="button" class="filter-btn" data-kind="sponge">бисквитные</button>
+        <button type="button" class="filter-btn" data-kind="layered">слоёные</button>
+        <button type="button" class="filter-btn" data-kind="fruit">фруктовые</button>
+      </div>
       <div class="dishes" data-category="cake"></div>
     </section>
 
     <section>
       <h2>Пирожные</h2>
+      <div class="filters" data-category="pastry">
+        <button type="button" class="filter-btn" data-kind="cream">кремовые</button>
+        <button type="button" class="filter-btn" data-kind="cheesecake">чизкейки</button>
+        <button type="button" class="filter-btn" data-kind="almond">миндальные</button>
+      </div>
       <div class="dishes" data-category="pastry"></div>
     </section>
 
     <section>
+      <h2>Выпечка</h2>
+      <div class="filters" data-category="bakery">
+        <button type="button" class="filter-btn" data-kind="puff">слоёная</button>
+        <button type="button" class="filter-btn" data-kind="yeast">дрожжевая</button>
+        <button type="button" class="filter-btn" data-kind="shortcrust">песочная</button>
+      </div>
+      <div class="dishes" data-category="bakery"></div>
+    </section>
+
+    <section>
       <h2>Напитки</h2>
+      <div class="filters" data-category="drink">
+        <button type="button" class="filter-btn" data-kind="cold">холодные</button>
+        <button type="button" class="filter-btn" data-kind="hot">горячие</button>
+      </div>
       <div class="dishes" data-category="drink"></div>
+    </section>
+
+    <section>
+      <h2>Десерты</h2>
+      <div class="filters" data-category="dessert">
+        <button type="button" class="filter-btn" data-kind="small">маленькая порция</button>
+        <button type="button" class="filter-btn" data-kind="medium">средняя порция</button>
+        <button type="button" class="filter-btn" data-kind="large">большая порция</button>
+      </div>
+      <div class="dishes" data-category="dessert"></div>
     </section>
 
     <section>
@@ -66,8 +100,18 @@
               <p class="order-item"></p>
             </div>
 
+            <div data-summary="bakery">
+              <p class="order-category">Выпечка</p>
+              <p class="order-item"></p>
+            </div>
+
             <div data-summary="drink">
               <p class="order-category">Напиток</p>
+              <p class="order-item"></p>
+            </div>
+
+            <div data-summary="dessert">
+              <p class="order-category">Десерт</p>
               <p class="order-item"></p>
             </div>
 
@@ -78,7 +122,9 @@
 
             <input type="hidden" id="cake-input" name="cake">
             <input type="hidden" id="pastry-input" name="pastry">
+            <input type="hidden" id="bakery-input" name="bakery">
             <input type="hidden" id="drink-input" name="drink">
+            <input type="hidden" id="dessert-input" name="dessert">
 
             <label for="comment">Комментарии к заказу</label>
             <textarea id="comment" name="comment" rows="5"></textarea>
@@ -140,6 +186,7 @@
   <script src="dishes.js"></script>
   <script src="display.js"></script>
   <script src="order.js"></script>
+  <script src="filter.js"></script>
 
 </body>
 </html>

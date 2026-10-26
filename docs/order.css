@@ -12,7 +12,7 @@
   border-radius: 35px;
   cursor: pointer;
   background-color: #ffffff;
-  filter: drop-shadow(17px 19px 24px rgba(0, 0, 0, 0.13));
+  box-shadow: 17px 19px 24px rgba(0, 0, 0, 0.13);
   transition: border 0.2s ease;
   border: 2px solid transparent;
 }
@@ -261,4 +261,38 @@
 .order-total-price {
   font-size: 20px;
   color: #5a3a2e;
+}
+
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.filter-btn {
+  background-color: transparent;
+  border: 1px solid #d0c8c2;
+  border-radius: 20px;
+  padding: 6px 16px;
+  font-family: 'Comfortaa', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: #5a3a2e;
+  cursor: pointer;
+  transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.filter-btn:hover {
+  border-color: tomato;
+}
+
+.filter-btn.active {
+  background-color: #f8d7da;
+  border-color: #e8a0a8;
+}
+
+.dish-card.is-hidden {
+  display: none;
 }

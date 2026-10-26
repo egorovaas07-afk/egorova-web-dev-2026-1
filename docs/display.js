@@ -4,6 +4,7 @@ function createDishCard(dish) {
   const card = document.createElement('div');
   card.classList.add('dish-card');
   card.dataset.dish = dish.keyword;
+  card.dataset.kind = dish.kind;
 
   const img = document.createElement('img');
   img.src = `images/${dish.image}.png`;
