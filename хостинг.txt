@@ -1,0 +1,21 @@
+Лаб 5 https://egorovaas07-afk.github.io/egorova-web-dev-2026-1/
+Лаб 6 https://egorovaas07-afk.github.io/egorova-web-dev-2026-1/
+Лаб 7
+
+
+
+
+
+
+
+
+cd /Users/egarinka/web_technologies
+git add lab5 lab6
+git commit -m "Добавлены lab5 и lab6"
+git push origin main
+
+Хост
+cp -R lab5/* docs/
+git add docs
+git commit -m "Обновила docs на 5 лабу"
+git push origin main
