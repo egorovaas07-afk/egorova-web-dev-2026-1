@@ -7,7 +7,7 @@ function createDishCard(dish) {
   card.dataset.kind = dish.kind;
 
   const img = document.createElement('img');
-  img.src = dish.image; // путь к картинке приходит вместе с данными блюда
+  img.src = dish.image;
   img.alt = dish.name;
 
   const price = document.createElement('p');
@@ -31,46 +31,18 @@ function createDishCard(dish) {
 }
 
 function displayDishes() {
-  const containers = document.querySelectorAll('.dishes[data-category]');
-
-  containers.forEach(function (container) {
+  document.querySelectorAll('.dishes[data-category]').forEach(function (container) {
     const category = container.dataset.category;
 
-    const categoryDishes = dishes
+    dishes
       .filter(function (dish) {
         return dish.category === category;
       })
       .sort(function (a, b) {
         return a.name.localeCompare(b.name, 'ru');
+      })
+      .forEach(function (dish) {
+        container.append(createDishCard(dish));
       });
-
-    categoryDishes.forEach(function (dish) {
-      container.append(createDishCard(dish));
-    });
   });
 }
-
-// Если сервер не ответил, сообщаем об этом в каждой секции
-function showLoadError() {
-  const containers = document.querySelectorAll('.dishes[data-category]');
-
-  containers.forEach(function (container) {
-    const message = document.createElement('p');
-    message.classList.add('load-error');
-    message.textContent = 'Не удалось загрузить меню. Обновите страницу.';
-    container.append(message);
-  });
-}
-
-// Загружаем блюда и, когда они пришли, выводим на страницу
-async function init() {
-  try {
-    await loadDishes();
-    displayDishes();
-  } catch (error) {
-    console.error(error);
-    showLoadError();
-  }
-}
-
-init();

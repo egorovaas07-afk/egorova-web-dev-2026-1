@@ -1,272 +1,302 @@
 [
   {
+    "id": 1,
+    "keyword": "red-velvet",
+    "name": "Торт «Красный бархат»",
+    "price": 2500,
     "category": "cake",
     "count": "1 кг",
     "image": "images/red_velvet.png",
-    "keyword": "red-velvet",
-    "kind": "sponge",
-    "name": "Торт «Красный бархат»",
-    "price": 2500
+    "kind": "sponge"
   },
   {
+    "id": 2,
+    "keyword": "prague-cake",
+    "name": "Торт «Прага»",
+    "price": 2300,
     "category": "cake",
     "count": "1 кг",
     "image": "images/prague.png",
-    "keyword": "prague-cake",
-    "kind": "sponge",
-    "name": "Торт «Прага»",
-    "price": 2300
+    "kind": "sponge"
   },
   {
+    "id": 3,
+    "keyword": "napoleon",
+    "name": "Торт «Наполеон»",
+    "price": 2200,
     "category": "cake",
     "count": "1 кг",
     "image": "images/napoleon2.png",
-    "keyword": "napoleon",
-    "kind": "layered",
-    "name": "Торт «Наполеон»",
-    "price": 2200
+    "kind": "layered"
   },
   {
+    "id": 4,
+    "keyword": "medovik",
+    "name": "Торт «Медовик»",
+    "price": 1500,
     "category": "cake",
     "count": "1 кг",
     "image": "images/medovic1.png",
-    "keyword": "medovik",
-    "kind": "layered",
-    "name": "Торт «Медовик»",
-    "price": 1500
+    "kind": "layered"
   },
   {
+    "id": 5,
+    "keyword": "strawberry-cake",
+    "name": "Торт «Клубничный»",
+    "price": 2400,
     "category": "cake",
     "count": "1 кг",
     "image": "images/strawberry_cake.png",
-    "keyword": "strawberry-cake",
-    "kind": "fruit",
-    "name": "Торт «Клубничный»",
-    "price": 2400
+    "kind": "fruit"
   },
   {
+    "id": 6,
+    "keyword": "lemon-cake",
+    "name": "Торт «Лимонный»",
+    "price": 2100,
     "category": "cake",
     "count": "1 кг",
     "image": "images/lemon_cake.png",
-    "keyword": "lemon-cake",
-    "kind": "fruit",
-    "name": "Торт «Лимонный»",
-    "price": 2100
+    "kind": "fruit"
   },
   {
+    "id": 7,
+    "keyword": "eclair",
+    "name": "Эклер с заварным кремом",
+    "price": 250,
     "category": "pastry",
     "count": "100 г",
     "image": "images/eclairs1.png",
-    "keyword": "eclair",
-    "kind": "cream",
-    "name": "Эклер с заварным кремом",
-    "price": 250
+    "kind": "cream"
   },
   {
+    "id": 8,
+    "keyword": "profiteroles",
+    "name": "Профитроли (3 шт.)",
+    "price": 300,
     "category": "pastry",
     "count": "120 г",
     "image": "images/profiteroles.png",
-    "keyword": "profiteroles",
-    "kind": "cream",
-    "name": "Профитроли (3 шт.)",
-    "price": 300
+    "kind": "cream"
   },
   {
+    "id": 9,
+    "keyword": "cheesecake",
+    "name": "Чизкейк «Нью-Йорк»",
+    "price": 350,
     "category": "pastry",
     "count": "150 г",
     "image": "images/cheesecake1.png",
-    "keyword": "cheesecake",
-    "kind": "cheesecake",
-    "name": "Чизкейк «Нью-Йорк»",
-    "price": 350
+    "kind": "cheesecake"
   },
   {
+    "id": 10,
+    "keyword": "choco-cheesecake",
+    "name": "Шоколадный чизкейк",
+    "price": 380,
     "category": "pastry",
     "count": "150 г",
     "image": "images/choco_cheesecake.png",
-    "keyword": "choco-cheesecake",
-    "kind": "cheesecake",
-    "name": "Шоколадный чизкейк",
-    "price": 380
+    "kind": "cheesecake"
   },
   {
+    "id": 11,
+    "keyword": "macaron",
+    "name": "Макарун",
+    "price": 150,
     "category": "pastry",
     "count": "30 г",
     "image": "images/macarony.png",
-    "keyword": "macaron",
-    "kind": "almond",
-    "name": "Макарун",
-    "price": 150
+    "kind": "almond"
   },
   {
+    "id": 12,
+    "keyword": "dacquoise",
+    "name": "Дакуаз",
+    "price": 280,
     "category": "pastry",
     "count": "110 г",
     "image": "images/dacquoise.png",
-    "keyword": "dacquoise",
-    "kind": "almond",
-    "name": "Дакуаз",
-    "price": 280
+    "kind": "almond"
   },
   {
+    "id": 13,
+    "keyword": "almond-croissant",
+    "name": "Миндальный круассан",
+    "price": 200,
     "category": "bakery",
     "count": "100 г",
     "image": "images/almond_croissant.png",
-    "keyword": "almond-croissant",
-    "kind": "puff",
-    "name": "Миндальный круассан",
-    "price": 200
+    "kind": "puff"
   },
   {
+    "id": 14,
+    "keyword": "choco-croissant",
+    "name": "Шоколадный круассан",
+    "price": 210,
     "category": "bakery",
     "count": "100 г",
     "image": "images/choco_croissant.png",
-    "keyword": "choco-croissant",
-    "kind": "puff",
-    "name": "Шоколадный круассан",
-    "price": 210
+    "kind": "puff"
   },
   {
+    "id": 15,
+    "keyword": "apple-puff",
+    "name": "Слойка с яблоком",
+    "price": 170,
     "category": "bakery",
     "count": "110 г",
     "image": "images/apple_puff.png",
-    "keyword": "apple-puff",
-    "kind": "puff",
-    "name": "Слойка с яблоком",
-    "price": 170
+    "kind": "puff"
   },
   {
+    "id": 16,
+    "keyword": "cherry-puff",
+    "name": "Слойка с вишней",
+    "price": 180,
     "category": "bakery",
     "count": "110 г",
     "image": "images/cherry_puff.png",
-    "keyword": "cherry-puff",
-    "kind": "puff",
-    "name": "Слойка с вишней",
-    "price": 180
+    "kind": "puff"
   },
   {
+    "id": 17,
+    "keyword": "cinnamon-roll",
+    "name": "Булочка с корицей",
+    "price": 160,
     "category": "bakery",
     "count": "100 г",
     "image": "images/cinnamon_roll.png",
-    "keyword": "cinnamon-roll",
-    "kind": "yeast",
-    "name": "Булочка с корицей",
-    "price": 160
+    "kind": "yeast"
   },
   {
+    "id": 18,
+    "keyword": "shortbread",
+    "name": "Песочное печенье с джемом",
+    "price": 120,
     "category": "bakery",
     "count": "80 г",
     "image": "images/shortbread.png",
-    "keyword": "shortbread",
-    "kind": "shortcrust",
-    "name": "Песочное печенье с джемом",
-    "price": 120
+    "kind": "shortcrust"
   },
   {
+    "id": 19,
+    "keyword": "iced-latte",
+    "name": "Айс-латте",
+    "price": 270,
     "category": "drink",
     "count": "300 мл",
     "image": "images/iced_latte.png",
-    "keyword": "iced-latte",
-    "kind": "cold",
-    "name": "Айс-латте",
-    "price": 270
+    "kind": "cold"
   },
   {
+    "id": 20,
+    "keyword": "lemonade",
+    "name": "Лимонад «Цитрус»",
+    "price": 200,
     "category": "drink",
     "count": "400 мл",
     "image": "images/lemonade.png",
-    "keyword": "lemonade",
-    "kind": "cold",
-    "name": "Лимонад «Цитрус»",
-    "price": 200
+    "kind": "cold"
   },
   {
+    "id": 21,
+    "keyword": "milkshake",
+    "name": "Клубничный милкшейк",
+    "price": 290,
     "category": "drink",
     "count": "350 мл",
     "image": "images/milkshake.png",
-    "keyword": "milkshake",
-    "kind": "cold",
-    "name": "Клубничный милкшейк",
-    "price": 290
+    "kind": "cold"
   },
   {
+    "id": 22,
+    "keyword": "latte",
+    "name": "Кофе латте",
+    "price": 250,
     "category": "drink",
     "count": "300 мл",
     "image": "images/latte.png",
-    "keyword": "latte",
-    "kind": "hot",
-    "name": "Кофе латте",
-    "price": 250
+    "kind": "hot"
   },
   {
+    "id": 23,
+    "keyword": "cocoa",
+    "name": "Какао с молоком",
+    "price": 220,
     "category": "drink",
     "count": "300 мл",
     "image": "images/cacao.png",
-    "keyword": "cocoa",
-    "kind": "hot",
-    "name": "Какао с молоком",
-    "price": 220
+    "kind": "hot"
   },
   {
+    "id": 24,
+    "keyword": "tea",
+    "name": "Чай с бергамотом",
+    "price": 180,
     "category": "drink",
     "count": "400 мл",
     "image": "images/tea.png",
-    "keyword": "tea",
-    "kind": "hot",
-    "name": "Чай с бергамотом",
-    "price": 180
+    "kind": "hot"
   },
   {
+    "id": 25,
+    "keyword": "panna-cotta",
+    "name": "Панна-котта",
+    "price": 200,
     "category": "dessert",
     "count": "100 г",
     "image": "images/panna_cotta.png",
-    "keyword": "panna-cotta",
-    "kind": "small",
-    "name": "Панна-котта",
-    "price": 200
+    "kind": "small"
   },
   {
+    "id": 26,
+    "keyword": "chocolate-mousse",
+    "name": "Шоколадный мусс",
+    "price": 210,
     "category": "dessert",
     "count": "110 г",
     "image": "images/mousse.png",
-    "keyword": "chocolate-mousse",
-    "kind": "small",
-    "name": "Шоколадный мусс",
-    "price": 210
+    "kind": "small"
   },
   {
+    "id": 27,
+    "keyword": "mini-tart",
+    "name": "Мини-тарт с ягодами",
+    "price": 230,
     "category": "dessert",
     "count": "120 г",
     "image": "images/mini_tart.png",
-    "keyword": "mini-tart",
-    "kind": "small",
-    "name": "Мини-тарт с ягодами",
-    "price": 230
+    "kind": "small"
   },
   {
+    "id": 28,
+    "keyword": "tiramisu",
+    "name": "Тирамису",
+    "price": 320,
     "category": "dessert",
     "count": "200 г",
     "image": "images/tiramisu.png",
-    "keyword": "tiramisu",
-    "kind": "medium",
-    "name": "Тирамису",
-    "price": 320
+    "kind": "medium"
   },
   {
+    "id": 29,
+    "keyword": "strudel",
+    "name": "Яблочный штрудель",
+    "price": 290,
     "category": "dessert",
     "count": "220 г",
     "image": "images/strudel.png",
-    "keyword": "strudel",
-    "kind": "medium",
-    "name": "Яблочный штрудель",
-    "price": 290
+    "kind": "medium"
   },
   {
+    "id": 30,
+    "keyword": "donuts",
+    "name": "Пончики (6 штук)",
+    "price": 650,
     "category": "dessert",
     "count": "500 г",
     "image": "images/donuts.png",
-    "keyword": "donuts",
-    "kind": "large",
-    "name": "Пончики (6 штук)",
-    "price": 650
+    "kind": "large"
   }
 ]

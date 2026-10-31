@@ -17,16 +17,13 @@ function applyFilter(category, kind) {
   });
 }
 
-// Обработчик клика по кнопке-фильтру
 function onFilterClick(event) {
   const button = event.target;
   const filters = button.closest('.filters');
   const category = filters.dataset.category;
 
-  // Если кликнули по уже выбранному фильтру — снимаем его
   const wasActive = button.classList.contains('active');
 
-  // Сначала снимаем active со всех кнопок этой категории
   filters.querySelectorAll('.filter-btn').forEach(function (item) {
     item.classList.remove('active');
   });
