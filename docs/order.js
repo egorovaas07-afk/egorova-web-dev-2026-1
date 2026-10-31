@@ -2,7 +2,6 @@
 
 const categories = ['cake', 'pastry', 'bakery', 'drink', 'dessert'];
 
-
 const emptyMessages = {
   cake: 'Блюдо не выбрано',
   pastry: 'Блюдо не выбрано',
@@ -10,7 +9,6 @@ const emptyMessages = {
   drink: 'Напиток не выбран',
   dessert: 'Блюдо не выбрано'
 };
-
 
 const selected = {
   cake: null,
@@ -27,7 +25,6 @@ const totalPrice = document.querySelector('#total-price');
 function updateOrder() {
   let total = 0;
   let hasSelected = false;
-
 
   categories.forEach(function (category) {
     const block = document.querySelector(`[data-summary="${category}"]`);
@@ -46,7 +43,6 @@ function updateOrder() {
     }
   });
 
-
   categories.forEach(function (category) {
     const block = document.querySelector(`[data-summary="${category}"]`);
     block.style.display = hasSelected ? 'block' : 'none';
@@ -54,39 +50,30 @@ function updateOrder() {
 
   nothingBlock.style.display = hasSelected ? 'none' : 'block';
   totalBlock.style.display = hasSelected ? 'block' : 'none';
-
-
   totalPrice.textContent = `${total}₽`;
 }
 
+document.addEventListener('click', function (event) {
+  const button = event.target.closest('.dish-card button');
+  if (!button) return;
 
-function onAddClick(event) {
-  const card = event.target.closest('.dish-card');
-  const keyword = card.dataset.dish;
-
-  
+  const card = button.closest('.dish-card');
   const dish = dishes.find(function (item) {
-    return item.keyword === keyword;
+    return item.keyword === card.dataset.dish;
   });
+  if (!dish) return;
 
   selected[dish.category] = dish;
 
-
-  const sameCategoryCards = document.querySelectorAll(
-    `.dishes[data-category="${dish.category}"] .dish-card`
-  );
-  sameCategoryCards.forEach(function (item) {
-    item.classList.remove('selected');
-  });
+  document
+    .querySelectorAll(`.dishes[data-category="${dish.category}"] .dish-card`)
+    .forEach(function (item) {
+      item.classList.remove('selected');
+    });
   card.classList.add('selected');
 
   updateOrder();
-}
-
-document.querySelectorAll('.dish-card button').forEach(function (button) {
-  button.addEventListener('click', onAddClick);
 });
-
 
 document.querySelector('.order-form').addEventListener('reset', function () {
   categories.forEach(function (category) {
@@ -95,8 +82,14 @@ document.querySelector('.order-form').addEventListener('reset', function () {
   document.querySelectorAll('.dish-card').forEach(function (card) {
     card.classList.remove('selected');
   });
-  
   setTimeout(updateOrder, 0);
 });
 
 updateOrder();
+
+async function init() {
+  await loadDishes();
+  displayDishes();
+}
+
+init();

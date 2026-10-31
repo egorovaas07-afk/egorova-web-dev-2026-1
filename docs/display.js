@@ -7,7 +7,7 @@ function createDishCard(dish) {
   card.dataset.kind = dish.kind;
 
   const img = document.createElement('img');
-  img.src = `images/${dish.image}.png`;
+  img.src = dish.image;
   img.alt = dish.name;
 
   const price = document.createElement('p');
@@ -30,25 +30,19 @@ function createDishCard(dish) {
   return card;
 }
 
-
 function displayDishes() {
-  const containers = document.querySelectorAll('.dishes[data-category]'); 
-
-  containers.forEach(function (container) {
+  document.querySelectorAll('.dishes[data-category]').forEach(function (container) {
     const category = container.dataset.category;
 
-    const categoryDishes = dishes
+    dishes
       .filter(function (dish) {
         return dish.category === category;
       })
       .sort(function (a, b) {
         return a.name.localeCompare(b.name, 'ru');
+      })
+      .forEach(function (dish) {
+        container.append(createDishCard(dish));
       });
-
-    categoryDishes.forEach(function (dish) {
-      container.append(createDishCard(dish));
-    });
   });
 }
-
-displayDishes();

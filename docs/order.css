@@ -298,6 +298,7 @@
 }
 
 
+
 .lunches h2 {
   text-align: center;
 }
@@ -317,13 +318,13 @@
   gap: 20px;
 }
 
-/* Десерт: шестая ячейка сетки */
 .lunch-dessert {
   display: flex;
   justify-content: center;
   align-items: flex-start;
 }
 
+/* Одно блюдо: картинка над подписью */
 .lunch-dish {
   display: flex;
   flex-direction: column;
@@ -416,4 +417,10 @@
     padding: 20px 25px;
     border-radius: 20px;
   }
+}
+
+.load-error {
+  grid-column: 1 / -1;
+  text-align: center;
+  color: tomato;
 }

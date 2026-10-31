@@ -5,9 +5,10 @@ const notificationTexts = {
   nothing: 'Ничего не выбрано. Выберите блюда для заказа',
   drink: 'Выберите напиток',
   needPastryOrBakery: 'Выберите пирожное или выпечку',
-  needCakeOrPastry: 'Выберите торт или пирожное', 
+  needCakeOrPastry: 'Выберите торт или пирожное',
   needPastry: 'Выберите пирожное'
 };
+
 
 function getNotificationText() {
   const hasCake = selected.cake !== null;
